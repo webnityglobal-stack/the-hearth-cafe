@@ -7,6 +7,8 @@ import {
   Menu as MenuIcon, ArrowUpRight
 } from 'lucide-react';
 
+const imagePath = (filename) =>
+  `${import.meta.env.BASE_URL}images/${filename}`;
 const PRODUCTS = [
   {
     id: 'hearth-burger',
@@ -16,7 +18,7 @@ const PRODUCTS = [
     tag: 'HOUSE FAVOURITE',
     desc: 'Smash-seared patty, aged cheddar, caramelised onion & our secret hearth sauce.',
     type: 'burger',
-    image: '/images/hearth-burger.png',
+    image: imagePath('hearth-burger.png'),
     color: '#b96e3d'
   },
   {
@@ -27,7 +29,7 @@ const PRODUCTS = [
     tag: 'WOOD-FIRED',
     desc: 'Wild mushrooms, mozzarella, truffle oil & a crisp blistered crust.',
     type: 'pizza',
-    image: '/images/truffle-pizza.png',
+    image: imagePath('truffle-pizza.png'),
     color: '#c98043'
   },
   {
@@ -38,7 +40,7 @@ const PRODUCTS = [
     tag: 'SLOW POURED',
     desc: 'Double espresso folded into silky steamed milk, finished with a little art.',
     type: 'coffee',
-    image: '/images/velvet-latte.png',
+    image: imagePath('velvet-latte.png'),
     color: '#9b6747'
   },
   {
@@ -49,7 +51,7 @@ const PRODUCTS = [
     tag: 'SWEET MOMENT',
     desc: 'Fluffy buttermilk stacks, warm berry compote & maple drizzle.',
     type: 'pancakes',
-    image: '/images/berry-pancakes.png',
+    image: imagePath('berry-pancakes.png'),
     color: '#d69a70'
   },
   {
@@ -60,7 +62,7 @@ const PRODUCTS = [
     tag: 'BAKED DAILY',
     desc: 'Soft spirals of cinnamon sugar with a generous vanilla glaze.',
     type: 'roll',
-    image: '/images/cinnamon-roll.png',
+    image: imagePath('cinnamon-roll.png'),
     color: '#bd7947'
   },
   {
@@ -71,7 +73,7 @@ const PRODUCTS = [
     tag: 'A LITTLE COMFORT',
     desc: 'Slow-brewed Assam tea, warming spices & a cloud of milk.',
     type: 'tea',
-    image: '/images/masala-chai.png',
+    image: imagePath('masala-chai.png'),
     color: '#a9683d'
   },
   {
@@ -81,7 +83,7 @@ const PRODUCTS = [
     price: 359,
     tag: 'GARDEN FRESH',
     desc: 'San Marzano tomato, creamy mozzarella, basil & olive oil.',
-    image: '/images/margherita-pizza.png',
+    image: imagePath('margherita-pizza.png'),
     type: 'pizza2',
     color: '#c9793f'
   },
@@ -93,7 +95,7 @@ const PRODUCTS = [
     tag: 'MELT-IN-THE-MIDDLE',
     desc: 'Dark chocolate cake with a molten centre and vanilla cream.',
     type: 'cake',
-    image: '/images/chocolate-lava-cake.png',
+    image: imagePath('chocolate-lava-cake.png'),
     color: '#69412e'
   },
   {
@@ -104,7 +106,7 @@ const PRODUCTS = [
     tag: 'COOL & CREAMY',
     desc: 'Chocolate, espresso, hazelnut and chilled milk over ice.',
     type: 'iced',
-    image: '/images/iced-mocha.png',
+    image: imagePath('iced-mocha.png'),
     color: '#8b573b'
   },
   {
@@ -115,7 +117,7 @@ const PRODUCTS = [
     tag: 'FRESH START',
     desc: 'Sourdough, whipped avocado, cherry tomato & chilli crunch.',
     type: 'toast',
-    image: '/images/avocado-toast.png',
+    image: imagePath('avocado-toast.png'),
     color: '#7c8c56'
   },
   {
@@ -126,7 +128,7 @@ const PRODUCTS = [
     tag: 'SILKY & SOFT',
     desc: 'Silky baked custard with a glossy salted caramel pour.',
     type: 'pudding',
-    image: '/images/caramel-pudding.png',
+    image: imagePath('caramel-pudding.png'),
     color: '#c38a4d'
   },
   {
@@ -137,7 +139,7 @@ const PRODUCTS = [
     tag: 'FRESHLY PRESSED',
     desc: 'Bright lemon, a hint of rosemary and sparkling water.',
     type: 'lemonade',
-    image: '/images/lemonade.png',
+    image: imagePath('lemonade.png'),
     color: '#c4b85c'
   }
 ];
